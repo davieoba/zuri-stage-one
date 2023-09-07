@@ -7,5 +7,5 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.use('/api/v1/info', infoRoute)
+app.use('/api/', infoRoute)
 module.exports = app
