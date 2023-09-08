@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
   const track = req.query.track
   const slack_name = req.query.slack_name
 
-  const current_day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][new Date().getDay()]
+  const current_day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][new Date().getDay() - 1]
 
   const currentDate = new Date()
 
